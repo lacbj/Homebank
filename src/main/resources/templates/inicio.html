@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head th:replace="layout/layout :: head">
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+	<div class="container-fluid" layout:fragment="page-content">
+
+		<h1 th:text="${titulo}"></h1>
+
+		<!-- Carrusel--> 
+    <section>       
+        <article class="carousel">
+          <input type="radio" name="slides" id="slide-1" checked>
+          <input type="radio" name="slides" id="slide-2">
+          <input type="radio" name="slides" id="slide-3">          
+          <ul class="slides">
+            <li class="slide">
+              <img class="avatar"
+                src="img/comporar_carro.jpg"
+                alt="Cliente 1">
+              <blockquote><i><a href="">CREDICARD</a></i>
+              </blockquote>
+              <h3></h3>            
+            </li>
+            <li class="slide">
+              <img class="avatar"
+                src="img/jovenes-emprendedores-tips.jpg"
+                alt="Cliente 2">
+              <blockquote><i><a href="">TU FINANCIAMIENTO</a></i>
+              </blockquote>                          
+            </li>
+            <li class="slide">
+              <img class="avatar"
+                src="img/casa.jpg"
+                alt="Cliente 3">
+              <blockquote><i><a href="">CREDICASA</a></i>
+              </blockquote>                          
+            </li>            
+          </ul>
+          <aside class="slides-nav">
+            <label for="slide-1" id="dot-1"></label>
+            <label for="slide-2" id="dot-2"></label>
+            <label for="slide-3" id="dot-3"></label>           
+          </aside>
+        </article>
+      </section>
+	</div>
+	
+	<!--OTRO SCRIPTS PARA PAGINAS-->
+	<th:block layout:fragment="page-scripts">
+
+	</th:block>
+
+</body>
+</html>

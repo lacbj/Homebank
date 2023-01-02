@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:fragment="head">
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Simple Sidebar - Start Bootstrap Template</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" th:href="@{/assets/favicon.ico}" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link th:href="@{/css/styles.css}" rel="stylesheet" />
+<link th:href="@{/css/styles2.css}" rel="stylesheet" />
+</head>
+<body>
+	<div class="d-flex" id="wrapper">
+		<!-- Sidebar-->
+		<div class="border-end bg-white" id="sidebar-wrapper">
+			<div class="sidebar-heading border-bottom bg-light">No brindes datos personales por correo, teléfono, SMS o redes sociales.</div>
+			<div>
+				 <section class="form-login" id="bancaOnline">
+                   <h5>Banco Codo a Codo</h5>
+                   <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
+                   <input class="controls" type="password" name="password" value="" placeholder="Contraseña">
+                   <input  class="buttons" type="submit" name="" value="Ingresar">
+                   <p><a href="">¿Olvidaste tu Contraseña?</a></p>
+                 </section>
+			</div>
+		</div>
+		<!-- Page content wrapper-->
+		<div id="page-content-wrapper">
+			<!-- Top navigation-->
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+				<div class="container-fluid">
+					<img src="/img/cac.png" alt="Error">					
+					<nav class="nav_principal">				        
+				        <a href="#personas">Personas</a></li>
+				        <a href="#empresas">Empresas</a></li>
+				        <a href="#solicitudCredito">Creditos</a></li>				       
+			        </nav>
+			        
+			        <button class="btn btn-primary" id="sidebarToggle">BANCA ONLINE
+					</button>	
+								
+				</div>
+			</nav>
+			<!-- Page content-->
+			<div class="container-fluid" layout:fragment="page-content">
+			
+			
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap core JS-->
+	<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+	<!-- Core theme JS-->
+	<script th:src="@{/js/scripts.js}"></script>
+
+
+	<!--OTRO SCRIPTS PARA PAGINAS-->
+	<th:block layout:fragment="page-scripts">
+
+	</th:block>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Document</title>
+</head>
+<body>-->
+    <!-- Navegador
+    <nav class="nav_principal">
+        <img src="/img/cac.png" alt="Error">
+        <a href="#personas">Personas</a></li>
+        <a href="#empresas">Empresas</a></li>
+        <a href="#solicitudCredito">Solicitá tu Credito</a></li>
+        <a href="#haceteCliente">Hacete Cliente</a></li>
+        <a href="#bancaOnline" class="login"><b>Banca Online</b></a></li>   
+    </nav>
+    <div class="lineaDivisoria">
+        <small><i> Llego tu momento....Hacete cliente con los mejores beneficios</i></small>
+    </div>  -->
+    <!-- Carrusel 
+    <section>       
+        <article class="carousel">
+          <input type="radio" name="slides" id="slide-1" checked>
+          <input type="radio" name="slides" id="slide-2">
+          <input type="radio" name="slides" id="slide-3">          
+          <ul class="slides">
+            <li class="slide">
+              <img class="avatar"
+                src="img/comporar_carro.jpg"
+                alt="Cliente 1">
+              <blockquote><i><a href="">CREDICARD</a></i>
+              </blockquote>
+              <h3></h3>            
+            </li>
+            <li class="slide">
+              <img class="avatar"
+                src="img/jovenes-emprendedores-tips.jpg"
+                alt="Cliente 2">
+              <blockquote><i><a href="">TU FINANCIAMIENTO</a></i>
+              </blockquote>                          
+            </li>
+            <li class="slide">
+              <img class="avatar"
+                src="img/casa.jpg"
+                alt="Cliente 3">
+              <blockquote><i><a href="">CREDICASA</a></i>
+              </blockquote>                          
+            </li>            
+          </ul>
+          <aside class="slides-nav">
+            <label for="slide-1" id="dot-1"></label>
+            <label for="slide-2" id="dot-2"></label>
+            <label for="slide-3" id="dot-3"></label>           
+          </aside>
+        </article>
+      </section>-->
+    <!-- Login
+    <section class="form-login" id="bancaOnline">
+        <h5>Banco Codo a Codo</h5>
+        <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
+        <input class="controls" type="password" name="password" value="" placeholder="Contraseña">
+        <input  class="buttons" type="submit" name="" value="Ingresar">
+        <p><a href="">¿Olvidaste tu Contraseña?</a></p>
+    </section>
+    <footer>
+      <small>
+        Sitio diseñado por <a href="https://www.linkedin.com/in/crespoleonel35/" target="_blank">Leonel Crespo</a>
+      </small>
+    </footer>   
+</body>
+</html> -->
