@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+
+<head th:replace="layout/layout :: head">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+
+<body>
+
+	<div class="container-fluid" layout:fragment="page-content">
+
+		<h1 th:text="${titulo}"></h1>
+
+		<!--Tabla de clientes-->
+		<section>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">id</th>
+						<th scope="col">email</th>
+						<th scope="col">password</th>
+						<th scope="col">username</th>
+						<th scope="col">age</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="cl:${clientes}">
+						<th scope="row"th:text="${cl.id}"></th>
+						<td th:text="${cl.email}"></td>
+						<td th:text="${cl.password}"></td>
+						<td th:text="${cl.username}"></td>
+						<td th:text="${cl.age}"></td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td colspan="2">Larry the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+<table class="table table-success table-striped">
+  ...
+</table>
+		</section>
+	</div>
+
+	<!--OTRO SCRIPTS PARA PAGINAS-->
+	<th:block layout:fragment="page-scripts">
+
+	</th:block>
+
+</body>
+
+</html>
